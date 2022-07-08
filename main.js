@@ -1,18 +1,15 @@
-let list=[];
-for(let i=0;i<27;i++) list.append(i); 
-
 var mr=true,mb=true;
 var pos_red=p[0],pos_blue=p[14],indx;
+var el=document.getElementById('player');
 
 let l=[];
 let p;
-for(let i=0;i<27;i++){
-    p=document.getElementById('pos_'+String(i));
+for(let j=0;j<27;j++){
+    p=document.getElementById(`pos_${i}`);
     l.append(p);
 }
 
 function isInLocker(x){
-    let el=document.getElementById('player');
     if(x==6&&el.innerHTML=="It's Red's turn") mr=false;
     else if(x==6&&el.innerHTML=="It's Blue's turn") mb=false;
 }
@@ -23,38 +20,33 @@ function display_peg(ind,peg_name){
 
 function position_red(x){
     if(!mr){
-        indx=list.indexOf(pos_red);
-        if(indx+x<=27) pos_red=list[indx+x];
+        if(pos_red+x<=27) pos_red+=x;
         else{
-            alert('Red won!');
+            alert('Red won, Game Over!');
         }
     }
 }
 
 function position_blue(x){
     if(!mb){
-        indx=list.indexOf(pos_blue);
-        if(indx+x<=42) pos_blue=list[(indx+x)%28];
+        if(pos_blue+x<=42) pos_blue=(pos_blue+x)%28;
         else{
-           alert('Blue won!');
+           alert('Blue won, Game Over!');
         }
     }
 }
 
 function move1(){
-    let el=document.getElementById('player');
     if(el.innerHTML=="It's Red's turn") display_peg(pos_red,1);
     else if(el.innerHTML=="It's Blue's turn") display_peg(pos_blue,1);
 }
 
 function move2(){
-    let el=document.getElementById('player');
     if(el.innerHTML=="It's Red's turn") display_peg(pos_red,2);
     else if(el.innerHTML=="It's Blue's turn") display_peg(pos_blue,2);
 }
 
 function move3(){
-    let el=document.getElementById('player');
     if(el.innerHTML=="It's Red's turn") display_peg(pos_red,3);
     else if(el.innerHTML=="It's Blue's turn") display_peg(pos_blue,3);
 }
