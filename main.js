@@ -1,3 +1,5 @@
+let el = document.getElementById('player').innerHTML;
+
 function roll(){
     let x = Math.floor(Math.random()*6)+1;
     document.getElementById('dice').innerHTML = x;
@@ -7,30 +9,33 @@ function roll(){
     else{
         document.getElementById('i').innerHTML = '';
     }
+    change_player(x);
+    position_red(x);
 }
 
-function getBgColor(element) 
-{
-  if (element.currentStyle)
-    return element.currentStyle.backgroundColor;
-  if (window.getComputedStyle){
-    let elementStyle=window.getComputedStyle(element,"");
-    if (elementStyle)
-      return elementStyle.getPropertyValue("background-color");
-  } 
+function change_player(x){
+    if(x!=6){
+        if(el == "It's Red's turn"){
+            el = "It's Blue's turn";
+        }
+        else if(el == "It's Blue's turn"){
+            el = "It's Red's turn";
+        }
+    }
 }
 
-function change_color(){
-    let x = document.getElementById('dice');
-    if(x.innerHTML!=6){
-        let el = document.createElement('i1');
-        let el1 = document.querySelector('#i1');
-        bgclr = getBgColor(el1);
-        if(bgclr == 'blue'){
-            el.innerHTML = '.i1{'+'background-color: red;'+'}';
-        }
-        else if(bgclr == 'red'){
-            el.innerHTML = '.i1{'+'background-color: blue;'+'}';
-        }
+let mr=true,mb=true;
+
+function isInLocker(x){
+    if(mr==true){
+        if(x==6&&el=="It's Red's turn") mr=false;
+        else if(x==6&&el=="It's Blue's turn") mb=false;
+    }
+}
+
+function position_red(x){
+    let pos_red;
+    if(!mr){
+        pos_red=pos_{$};
     }
 }

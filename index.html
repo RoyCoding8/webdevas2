@@ -9,7 +9,7 @@
 <body>
 <div class="container">
     <div class="row1">
-        <div class="column1"> Player A starts here...</div>
+        <div class="column1" id="pos_0"> Player A starts here...</div>
         <div class="column2"></div>
         <div class="column3"></div>
         <div class="column4"></div>
@@ -17,9 +17,9 @@
         <div class="column6"></div>
         <div class="column7"></div>
         <div class="column8"></div>
-    </div><div class="row2">
-        <div class="column1"></div>
-        <div class="column2"></div>
+    </div><div class="row2" >
+        <div class="column1" ></div>
+        <div class="column2" id="pos_1"></div>
         <div class="column3"></div>
         <div class="column4"></div>
         <div class="column5"></div>
@@ -27,7 +27,7 @@
         <div class="column7"></div>
         <div class="column8"></div>
     </div><div class="row3">
-        <div class="column1"></div>
+        <div class="column1" id="pos_2"></div>
         <div class="column2"></div>
         <div class="column3"></div>
         <div class="column4"></div>
@@ -36,7 +36,7 @@
         <div class="column7"></div>
         <div class="column8"></div>
     </div><div class="row4">
-        <div class="column1"></div>
+        <div class="column1" id="pos_3"></div>
         <div class="column2"></div>
         <div class="column3"></div>
         <div class="column4"></div>
@@ -45,7 +45,7 @@
         <div class="column7"></div>
         <div class="column8"></div>
     </div><div class="row5">
-        <div class="column1"></div>
+        <div class="column1" id="pos_4"></div>
         <div class="column2"></div>
         <div class="column3"></div>
         <div class="column4"></div>
@@ -54,7 +54,7 @@
         <div class="column7"></div>
         <div class="column8"></div>
     </div><div class="row6">
-        <div class="column1"></div>
+        <div class="column1" id="pos_5"></div>
         <div class="column2"></div>
         <div class="column3"></div>
         <div class="column4"></div>
@@ -63,22 +63,22 @@
         <div class="column7"></div>
         <div class="column8"></div>
     </div><div class="row7">
-        <div class="column1"></div>
-        <div class="column2"></div>
-        <div class="column3"></div>
-        <div class="column4"></div>
-        <div class="column5"></div>
-        <div class="column6"></div>
-        <div class="column7"></div>
-        <div class="column8"></div>
+        <div class="column1" id="pos_6"></div>
+        <div class="column2" id="pos_21"></div>
+        <div class="column3" id="pos_20"></div>
+        <div class="column4" id="pos_19"></div>
+        <div class="column5" id="pos_18"></div>
+        <div class="column6" id="pos_17"></div>
+        <div class="column7" id="pos_16"></div>
+        <div class="column8" id="pos_15"></div>
     </div><div class="row8">
-        <div class="column1"></div>
-        <div class="column2"></div>
-        <div class="column3"></div>
-        <div class="column4"></div>
-        <div class="column5"></div>
-        <div class="column6"></div>
-        <div class="column7"></div>
+        <div class="column1" id="pos_7"></div>
+        <div class="column2" id="pos_8"></div>
+        <div class="column3" id="pos_9"></div>
+        <div class="column4" id="pos_10"></div>
+        <div class="column5" id="pos_11"></div>
+        <div class="column6" id="pos_12"></div>
+        <div class="column7" id="pos_14"></div>
         <div class="column8">Player B starts here...</div>
     </div>
     <div class="rcontainer">
@@ -90,6 +90,7 @@
         <button id="i1" class="i1" onclick="change_color()">2</button>
         <button id="i1" class="i1 onclick="change_color()">3</button>
         <button id="i1" class="i1" onclick="change_color()">4</button>
+        <p  id="player" style="text-align: center; color: rgba(0, 0, 0, 0.83);">It's Red's turn</p>
     </div>
 </div>
 </body>
