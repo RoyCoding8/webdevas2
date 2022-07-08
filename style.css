@@ -7,70 +7,81 @@
     padding: 3px;
     font-family: calibri;
     color:black;
+    background-image: url("9op4iW.webp");
+    background-size: 100%;
 }
 
 .row1 div.column1,.row1 div.column2,.row1 div.column3,.row1 div.column4,.row1 div.column5,.row1 div.column6,.row1 div.column7,.row1 div.column8{
     border: 1px solid rgb(0, 0, 0,0.5);
     width: 21.7vh;
     height: 11.85vh;
+    background-color: aliceblue;
 }
 
 .row2 div.column1,.row3 div.column1,.row4 div.column1,.row5 div.column1,.row6 div.column1,.row7 div.column1{
     border: 1px solid rgb(0, 0, 0,0.5);
     width: 21.7vh;
     height: 11.85vh;
+    background-color: aliceblue;
 }
 
 .row8 div.column1,.row8 div.column2,.row8 div.column3,.row8 div.column4,.row8 div.column5,.row8 div.column6,.row8 div.column7,.row8 div.column8{
-    border: 1px solid rgb(0, 0, 0,0.5);
+    border: 1px solid rgb(0, 0, 0, 0.5);
     width: 21.7vh;
     height: 11.85vh;
+    background-color: aliceblue;
 }
 
 .row2 div.column2,.row3 div.column2,.row4 div.column2,.row5 div.column2,.row6 div.column2,.row7 div.column2{
-    border: 1px solid white;
+    border: none;
+    padding: 1px;
     width: 21.7vh;
     height: 11.7vh;
 }
 
 .row2 div.column3,.row3 div.column3,.row4 div.column3,.row5 div.column3,.row6 div.column3,.row7 div.column3{
-    border: 1px solid white;
+    border: none;
+    padding: 1px;
     width: 21.7vh;
     height: 11.7vh;
 }
 
 .row2 div.column4,.row3 div.column4,.row4 div.column4,.row5 div.column4,.row6 div.column4,.row7 div.column4{
-    border: 1px solid white;
+    border: none;
+    padding: 1px;
     width: 21.7vh;
     height: 11.7vh;
 }
 
 .row2 div.column5,.row3 div.column5,.row4 div.column5,.row5 div.column5,.row6 div.column5,.row7 div.column5{
-    border: 1px solid white;
+    border: none;
+    padding: 1px;
     width: 21.7vh;
     height: 11.7vh;
 }
 
 .row2 div.column8,.row3 div.column8,.row4 div.column8,.row5 div.column8,.row6 div.column8,.row7 div.column8{
-    border: 1px solid rgb(0, 0, 0,0.5);
+    border: rgb(0, 0, 0,0.5);
     width: 21.7vh;
     height: 11.7vh;
+    background-color: aliceblue;
 }
 
 .row2 div.column6,.row3 div.column6,.row4 div.column6,.row5 div.column6,.row6 div.column6,.row7 div.column6{
-    border: 1px solid white;
+    border: none;
+    padding: 1px;
     width: 21.7vh;
     height: 11.7vh;
 }
 
 .row2 div.column7,.row3 div.column7,.row4 div.column7,.row5 div.column7,.row6 div.column7,.row7 div.column7{
-    border: 1px solid white;
+    border: none;
+    padding: 1px;
     width: 21.7vh;
     height: 11.7vh;
 }
 
 .row1 div.column1{
-    /* border-right: none; */
     border-bottom: none;
     background-color: rgba(255, 42, 0, 0.65);
     color: rgb(255, 255, 0);
@@ -78,8 +89,8 @@
 }
 
 .row8 div.column8{
-    background-color: rgba(0, 225, 255, 0.6);
-    color: rgba(21, 0, 255, 0.822);
+    background-color: rgba(157, 240, 251, 0.9);
+    color: rgb(21, 0, 255);
     text-align: center;
 }
 
