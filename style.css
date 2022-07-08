@@ -1,0 +1,126 @@
+.container{
+    display: flex;
+    align-items: flex-start;
+    width: 180.5vh;
+    height: 96vh;
+    border: 1px solid rgb(0, 0, 0,0.5);
+    padding: 5px;
+    font-size: x-large;
+    font-family: calibri;
+}
+
+.row1 div.column1,.row1 div.column2,.row1 div.column3,.row1 div.column4,.row1 div.column5,.row1 div.column6,.row1 div.column7,.row1 div.column8{
+    border: 1px solid rgb(0, 0, 0,0.5);
+    width: 22vh;
+    height: 11.85vh;
+}
+
+.row2 div.column1,.row3 div.column1,.row4 div.column1,.row5 div.column1,.row6 div.column1,.row7 div.column1{
+    border: 1px solid rgb(0, 0, 0,0.5);
+    width: 22.35vh;
+    height: 11.85vh;
+    /* border-right: none; */
+}
+
+.row8 div.column1,.row8 div.column2,.row8 div.column3,.row8 div.column4,.row8 div.column5,.row8 div.column6,.row8 div.column7,.row8 div.column8{
+    border: 1px solid rgb(0, 0, 0,0.5);
+    width: 22.35vh;
+    height: 11.85vh;
+}
+
+.row2 div.column2,.row3 div.column2,.row4 div.column2,.row5 div.column2,.row6 div.column2,.row7 div.column2{
+    border: 1px solid white;
+    width: 22.35vh;
+    height: 11.7vh;
+}
+
+.row2 div.column3,.row3 div.column3,.row4 div.column3,.row5 div.column3,.row6 div.column3,.row7 div.column3{
+    border: 1px solid white;
+    width: 22.35vh;
+    height: 11.7vh;
+}
+
+.row2 div.column4,.row3 div.column4,.row4 div.column4,.row5 div.column4,.row6 div.column4,.row7 div.column4{
+    border: 1px solid white;
+    width: 22.35vh;
+    height: 11.7vh;
+}
+
+.row2 div.column5,.row3 div.column5,.row4 div.column5,.row5 div.column5,.row6 div.column5,.row7 div.column5{
+    border: 1px solid white;
+    width: 22.35vh;
+    height: 11.7vh;
+}
+
+.row2 div.column8,.row3 div.column8,.row4 div.column8,.row5 div.column8,.row6 div.column8,.row7 div.column8{
+    border: 1px solid rgb(0, 0, 0,0.5);
+    width: 22.35vh;
+    height: 11.7vh;
+}
+
+.row2 div.column6,.row3 div.column6,.row4 div.column6,.row5 div.column6,.row6 div.column6,.row7 div.column6{
+    border: 1px solid white;
+    width: 22.35vh;
+    height: 11.7vh;
+}
+
+.row2 div.column7,.row3 div.column7,.row4 div.column7,.row5 div.column7,.row6 div.column7,.row7 div.column7{
+    border: 1px solid white;
+    width: 22.35vh;
+    height: 11.7vh;
+}
+
+.row1 div.column1{
+    /* border-right: none; */
+    border-bottom: none;
+    background-color: rgba(255, 42, 0, 0.65);
+    color: rgb(255, 255, 0);
+    text-align: center;
+}
+
+.row8 div.column8{
+    background-color: rgba(0, 225, 255, 0.6);
+    color: rgba(21, 0, 255, 0.822);
+    text-align: center;
+}
+
+.row1 div.column2,.row1 div.column3,.row1 div.column4,.row1 div.column5,.row1 div.column6,.row1 div.column7{
+    border-bottom: none;
+}
+
+.row8 div.column1,.row8 div.column2,.row8 div.column3,.row8 div.column4,.row8 div.column5,.row8 div.column6,.row8 div.column7{
+    border-bottom: none;
+}
+
+.rcontainer{
+    margin-left: 5rem;
+}
+
+.rcontainer p{
+    font-size: x-large;
+    color: rgba(0, 0, 255, 0.629);
+    font-family: arial;
+}
+
+#dice{
+    margin: auto auto;
+    border: 0.5px solid rgba(128, 128, 128, 0.2);
+    background-color: white;
+    width:auto;
+    height:auto;
+    color: rgba(255, 64, 0, 0.752);
+    font-family: calibri;
+    font-size: x-large;
+}
+
+#i1{
+    margin: auto auto;
+    border: 3px solid white;
+    width:3.5rem;
+    height:auto;
+    color: white;
+    font-family: calibri;
+    font-size: x-large;
+    border-radius: 8px;
+    background-color: red;
+}
