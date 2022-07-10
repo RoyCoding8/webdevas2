@@ -1,18 +1,25 @@
 var mr=true,mb=true;
-var el=document.getElementById('player');
-
+var el,p,pos_red,pos_blue,indx;
 let l=[];
-let p;
-for(let j=0;j<27;j++){
-    p=document.getElementById(`pos_${i}`);
-    l.append(p);
+
+function store_pos(x){
+    for(let j=0;j<28;j++){
+        p=document.getElementById(`pos_${i}`);
+        l.append(p);
+    }
+    _init_(x);
 }
 
-var pos_red=l[0],pos_blue=l[14],indx,x;
+function _init_(x){
+    pos_red=l[0],pos_blue=l[14];
+    if(el.innerHTML == "It's Red's turn") position_red(x);
+    else if(el.innerHTML == "It's Blue's turn") position_blue(x);
+}
 
 function isInLocker(x){
     if(x==6&&el.innerHTML=="It's Red's turn") mr=false;
     else if(x==6&&el.innerHTML=="It's Blue's turn") mb=false;
+    console.log(mr,mb);
 }
 
 function display_peg(ind,peg_name){
@@ -38,30 +45,35 @@ function position_blue(x){
 }
 
 function move1(){
+    el = document.getElementById('player');
+    store_pos();
     if(el.innerHTML=="It's Red's turn") display_peg(pos_red,1);
     else if(el.innerHTML=="It's Blue's turn") display_peg(pos_blue,1);
 }
 
 function move2(){
+    el = document.getElementById('player');
+    store_pos();
     if(el.innerHTML=="It's Red's turn") display_peg(pos_red,2);
     else if(el.innerHTML=="It's Blue's turn") display_peg(pos_blue,2);
 }
 
 function move3(){
+    el = document.getElementById('player');
+    store_pos();
     if(el.innerHTML=="It's Red's turn") display_peg(pos_red,3);
     else if(el.innerHTML=="It's Blue's turn") display_peg(pos_blue,3);
 }
 
 function move4(){
-    let el=document.getElementById('player');
+    let el = document.getElementById('player');
+    store_pos();
     if(el.innerHTML=="It's Red's turn") display_peg(pos_red,4);
     else if(el.innerHTML=="It's Blue's turn") display_peg(pos_blue,4);
 }
 
 function change_player(x){
-    let el = document.getElementById('player');
-    if(el.innerHTML == "It's Red's turn") position_red(x);
-    else if(el.innerHTML == "It's Blue's turn") position_blue(x);
+    el = document.getElementById('player');
     if(x!=6){
         if(el.innerHTML == "It's Red's turn"){
             el.innerHTML = "It's Blue's turn";
@@ -70,10 +82,11 @@ function change_player(x){
             el.innerHTML = "It's Red's turn";
         }
     }
+    store_pos(x);
 }
 
 function roll(){
-    x = Math.floor(Math.random()*6)+1;
+    let x = Math.floor(Math.random()*6)+1;
     document.getElementById('dice').innerHTML = x;
     if(x==6){
         document.getElementById('i').innerHTML = 'Roll Again!';
