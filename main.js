@@ -5,7 +5,7 @@ let l=[];
 function store_pos(x){
     for(let j=0;j<28;j++){
         p=document.getElementById(`pos_${i}`);
-        l.append(p);
+        l.push(p);
     }
     _init_(x);
 }
