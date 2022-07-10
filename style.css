@@ -9,6 +9,7 @@
     color:black;
     background-image: url("9op4iW.webp");
     background-size: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);  
 }
 
 .row1 div.column1,.row1 div.column2,.row1 div.column3,.row1 div.column4,.row1 div.column5,.row1 div.column6,.row1 div.column7,.row1 div.column8{
@@ -63,7 +64,7 @@
 .row2 div.column8,.row3 div.column8,.row4 div.column8,.row5 div.column8,.row6 div.column8,.row7 div.column8{
     border: rgb(0, 0, 0,0.5);
     width: 21.7vh;
-    height: 11.7vh;
+    height: 12vh;
     background-color: aliceblue;
 }
 

@@ -1,5 +1,4 @@
 var mr=true,mb=true;
-var pos_red=p[0],pos_blue=p[14],indx;
 var el=document.getElementById('player');
 
 let l=[];
@@ -8,6 +7,8 @@ for(let j=0;j<27;j++){
     p=document.getElementById(`pos_${i}`);
     l.append(p);
 }
+
+var pos_red=l[0],pos_blue=l[14],indx,x;
 
 function isInLocker(x){
     if(x==6&&el.innerHTML=="It's Red's turn") mr=false;
@@ -72,7 +73,7 @@ function change_player(x){
 }
 
 function roll(){
-    let x = Math.floor(Math.random()*6)+1;
+    x = Math.floor(Math.random()*6)+1;
     document.getElementById('dice').innerHTML = x;
     if(x==6){
         document.getElementById('i').innerHTML = 'Roll Again!';
