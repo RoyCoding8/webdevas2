@@ -4,9 +4,10 @@ let l=[];
 
 function store_pos(x){
     for(let j=0;j<28;j++){
-        p=document.getElementById(`pos_${i}`);
+        p=document.getElementById("pos_"+String(j));
         l.push(p);
     }
+    console.log("l:", l);
     _init_(x);
 }
 
